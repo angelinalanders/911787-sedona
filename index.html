@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+    <title>Седона</title>  
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="http://placehold.it/150x100" alt="Логотип Седоны">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="gallery.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="inner.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <img src="http://placehold.it/150x100" alt="Welcome to the gorgeous Sedona" "Because the Grand Canyon sucks">
+        <div class="features">
+            <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
+        <section class="appointment">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+            <div class="search">
+                <a href="https://sedona.com/search">Поиск гостиницы в Седоне</a>
+                <p>Дата заезда: <time datetime="2017-04-27">27 апреля 2017</time></p>
+                <p>Дата выезда: <time datetime="2017-07-04">4 июля 2017</time></p>
+                <p>Взрослые: 2</p>
+                <p>Дети: 0</p>
+                <a class="button" href="search.html">Найти</a>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="hashtag">#visitsedona</div>
+        <ul class="footer-social">
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+        <div class="footer-copyright">
+            <p>Website by <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+        </div>
+    </footer>
+</body>
 </html>
