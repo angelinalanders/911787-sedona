@@ -21,42 +21,51 @@
         </nav>
     </header>
     <section class="filters">
-        <h3 class="filters-title">Инфраструктура:</h3>
-        <ul class="filters-list">
-            <li>
-                <input type="checkbox" id="pool" checked>
-                <label for="pool">Бассейн</label>
-            </li>
-            <li>
-                <input type="checkbox" id="parking">
-                <label for="parking">Парковка</label>
-            </li>
-            <li>
-                <input type="checkbox" id="internet">
-                <label for="internet">Wi-Fi</label>
-            </li>
-        </ul>
-        <h3 class="filters-title">Тип жилья:</h3>
-        <ul class="filters-list">
-            <li>
-                <input type="checkbox" id="hotel" checked>
-                <label for="hotel">Гостиница</label>
-            </li>
-            <li>
-                <input type="checkbox" id="motel" checked>
-                <label for="motel">Мотель</label>
-            </li>
-            <li>
-                <input type="checkbox" id="apartments" checked>
-                <label for="apartments">Апартаменты</label>
-            </li>
-        </ul>
-        <h3 class="filters-title">Стоимость в сутки (Р):</h3>
-        <ul class="filters-list">
-            <label>от<input class="price" type="text" name="price-from" value="0"></label>
-            <label>до<input class="price" type="text" name="price-to" value="3000"></label>
-        </ul>
-        <input type="submit" class="button" value="Показать">
+        <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="filters-title">Инфраструктура:</h3>
+            <ul class="filters-list">
+                <li>
+                    <input type="checkbox" id="pool" checked>
+                    <label for="pool">Бассейн</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="parking">
+                    <label for="parking">Парковка</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="internet">
+                    <label for="internet">Wi-Fi</label>
+                </li>
+            </ul>
+            <h3 class="filters-title">Тип жилья:</h3>
+            <ul class="filters-list">
+                <li>
+                    <input type="checkbox" id="hotel" checked>
+                    <label for="hotel">Гостиница</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="motel" checked>
+                    <label for="motel">Мотель</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="apartments" checked>
+                    <label for="apartments">Апартаменты</label>
+                </li>
+            </ul>
+            <h3 class="filters-title">Стоимость в сутки (Р):</h3>
+            <div class="filters-list">
+                <label>от<input class="price" type="text" name="price-from" value="0"></label>
+                <label>до<input class="price" type="text" name="price-to" value="3000"></label>
+                <div class="scale">
+                    <button class="scale-left" type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Бегунок"></button>
+                    <img src="img/line.png" width="317" height="2" alt="Линия">
+                    <button class="scale-right" type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Бегунок"></button>
+                </div>
+                <div class="show-button">
+                    <input type="submit" class="button" value="Показать">
+                </div>
+            </div>
+        </form>
     </section>
     <p class="catalog-title">Найдено: 3</p>
     <h3 class="sort-title">Сортировка:</h3>
