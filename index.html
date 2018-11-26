@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -78,19 +77,54 @@
         <section class="appointment">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-            <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+            <div class="map">
+                <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+            </div>
             <div class="search">
-                <a href="https://sedona.com/search">Поиск гостиницы в Седоне</a>
-                <p>Дата заезда: <time datetime="2017-04-27">27 апреля 2017<img src="img/calendar.png" width="21" height="22" alt="Календарь"></time></p>
-                <p>Дата выезда: <time datetime="2017-07-04">4 июля 2017<img src="img/calendar.png" width="21" height="22" alt="Календарь"></time></p>
-                <p>Взрослые: 2</p>
-                <p>Дети: 0</p>
-                <a class="button" href="search.html">Найти</a>
+                <a href="search.html">Поиск гостиницы в Седоне</a>
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="search-date">
+                        <label for="day-in">Дата заезда:
+                            <input class="date" type="text" id="day-in" name="in" placeholder="24 апреля 2016">
+                            <button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="search-date">
+                        <label for="day-out">Дата выезда:
+                            <input class="date" type="text" id="day-out" name="out" placeholder="4 июля 2017">
+                            <button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="adults">
+                        <label for="adult-number">Взрослые:
+                            <button class="button-minus" type="button"><img src="img/icon-minus.png" width="12" height="3" alt="Минус">
+                            </button>
+                            <input class="person" type="text" id="adult-number" name="number" value="2">
+                            <button class="button-plus" type="button"><img src="img/icon-plus.png" width="11" height="11" alt="Плюс">
+                            </button>
+                        </label>
+                    </div>
+                    <div class="child">
+                        <label for="child-number">Дети:
+                            <button class="button-plus" type="button"><img src="img/icon-minus.png" width="12" height="3" alt="Минус">
+                            </button>
+                            <input class="person" type="text" id="child-number" name="number" value="0">
+                            <button class="button-plus" type="button">
+                                <img src="img/icon-plus.png" width="11" height="11" alt="Плюс">
+                            </button>
+                        </label>
+                    </div>
+                    <input type="submit" value="Найти">
+                </form>
             </div>
         </section>
     </main>
     <footer class="main-footer">
-        <div class="hashtag">#visitsedona</div>
+        <div class="hashtag">
+            <a href="#">#visitsedona</a>
+        </div>
         <ul class="footer-social">
             <li><a class="social-button" href="#"><img src="img/twitter.png" width="17" height="15" alt="Твиттер"></a></li>
             <li><a class="social-button" href="#"><img src="img/facebook.png" width="12" height="22" alt="Фейсбук"></a></li>
@@ -103,3 +137,4 @@
 </body>
 
 </html>
+
