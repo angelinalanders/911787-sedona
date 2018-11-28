@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +25,9 @@
     </header>
     <main class="container">
         <img src="img/background-welcome.jpg" width="1200" height="773" alt="Welcome to the gorgeous Sedona">
+        <div class="polygon">
+            <img src="img/polygon.svg" width="1201" height="59" alt="Полигон">
+        </div>
         <div class="features">
             <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -31,6 +37,8 @@
                 <h3>Настоящий городок</h3>
                 <p>&mdash; №1 &mdash;</p>
                 <p>Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="photo">
                 <img src="img/photo-city.jpg" width="800" height="256" alt="Настоящий городок">
             </div>
             <ul class="catalog-list">
@@ -54,9 +62,11 @@
                 <h3>Там есть мост дьявола</h3>
                 <p>&mdash; №2 &mdash;</p>
                 <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            </div>
+            <div class="photo">
                 <img src="img/photo-bridge.jpg" width="800" height="256" alt="Мост дьявола">
             </div>
-            <ul class="catalog-list">
+            <ul class="catalog-list-second">
                 <li class="catalog-item">
                     <h3>Небольшая площадь</h3>
                     <p>&mdash; №3 &mdash;</p>
@@ -80,20 +90,20 @@
             <div class="map">
                 <img src="img/map.jpg" width="1200" height="593" alt="Карта">
             </div>
-            <div class="search">
+            <div class="search-hotel">
                 <a href="search.html">Поиск гостиницы в Седоне</a>
+            </div>
+            <div class="search">
                 <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                     <div class="search-date">
                         <label for="day-in">Дата заезда:
-                            <input class="date" type="text" id="day-in" name="in" placeholder="24 апреля 2016">
-                            <button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
+                            <input class="date" type="text" id="day-in" name="in" placeholder="24 апреля 2016"><button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
                             </button>
                         </label>
                     </div>
                     <div class="search-date">
                         <label for="day-out">Дата выезда:
-                            <input class="date" type="text" id="day-out" name="out" placeholder="4 июля 2017">
-                            <button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
+                            <input class="date" type="text" id="day-out" name="out" placeholder="4 июля 2017"><button class="button-calendar" type="button"><img src="img/calendar.png" width="21" height="22" alt="Календарь">
                             </button>
                         </label>
                     </div>
@@ -137,4 +147,3 @@
 </body>
 
 </html>
-
