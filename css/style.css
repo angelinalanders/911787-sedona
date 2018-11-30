@@ -90,7 +90,7 @@ form {
 .offer {
     text-align: center;
     font-weight: normal;
-    background-color: white;
+    background-color: #ffffff;
     padding-top: 55px;
     padding-bottom: 50px;
 }
@@ -240,7 +240,7 @@ form {
     padding-left: 72px;
 }
 .sort-title {
-    background-color: white;
+    background-color: #ffffff;
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
@@ -249,7 +249,7 @@ form {
     padding-left: 72px;
 }
 .sort-list {
-    background-color: white;
+    background-color: #ffffff;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
@@ -273,7 +273,7 @@ form {
     text-decoration: none; 
 }
 .hotels {
-    background-color: white;
+    background-color: #ffffff;
     width: 1200px;
     margin: 0 auto;
     padding-left: 72px;
@@ -286,7 +286,7 @@ form {
 }
 
 .hotels a {
-    color: black;
+    color: #000000;
     text-decoration: none;
 }
 .hotels a :hover {
@@ -299,7 +299,7 @@ form {
     font-weight: normal;
 }
 .hotel-buttons a {
-    color: white;
+    color: #ffffff;
 }
 .button-more {
     background-color: #81b3d2;
