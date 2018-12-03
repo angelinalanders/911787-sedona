@@ -8,34 +8,29 @@ body {
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
-li {
-    list-style-type: none;
-}
-form {
-    background-color: #ffffff;
-}
 .main-header {
-    background-image: url("logo.png");
+    background-image: url(../img/logo.png);
     width: 140px;
     margin: 0 auto;
     background-repeat: no-repeat;
-    background-color: #ffffff;
 }
 .container {
     background-color: #f2f2f2;
-    background-image: url("background-welcome.jpg");
     width: 1200px;
     margin: 0 auto;
     background-repeat: no-repeat;
 }
-.site-navigation a {
-    background-color: white;
+.site-navigation {
+    margin: 0 auto;
+    background-color: #ffffff;
+    height: 55px;
+    padding: 0;
+    list-style-type: none;
+}
+  .site-navigation a {
+    background-color: #ffffff;
     color: #000000; 
     text-decoration: none;
-}
-.polygon {
-  background-image: url("polygon.svg");
-  background-position: top center;
 }
 .features {
     text-align: center; 
@@ -54,19 +49,16 @@ form {
 }
 .info-list {
     text-align: center;
-    color: white;
+    color: #ffffff;
     background-color: #81b3d2;
     font-weight: normal;
-    background-position: left;
     width: 400px;
     height: inherit;
     padding-top: 45px;
     padding-bottom: 65px;
-    background-repeat: no-repeat;   
 }
 .column {
     padding: 0;
-    display:inline-flex;
     vertical-align: bottom;   
 }
 .column-list {
@@ -75,7 +67,8 @@ form {
     width: 1200px;
     margin-top: 60px;
     margin-bottom: 85px;
-    background-color: #ffffff;    
+    background-color: #ffffff; 
+    list-style-type: none;
 }
 .column-catalog-list-convenience {
     background-color: #eeeeee;
@@ -194,7 +187,7 @@ form {
     text-align: center;
 }
 .footer-copyright {
-    background-image: url("logo-htmlacademy.png");
+    background-image: url(../img/logo-htmlacademy.png);
     background-color: transparent;
     font-size: 14px;
     line-height: 26px;
@@ -205,7 +198,7 @@ form {
 }
 /*inner*/ 
 .filters-form {
-    background-image: url("background-filter.jpg");
+    background-image: url(../img/background-filter.jpg);
     width: 1200px;
     margin: 0 auto;
     padding-left: 72px;
@@ -256,9 +249,6 @@ form {
     font-weight: normal;
     color: #b6b6b6;
 }
-.sort-list .sort-current:visited {
-    color: #81b3d2;
-}
 .sort-list .sort:active {
     color: #000000;
 }
@@ -289,7 +279,7 @@ form {
     color: #000000;
     text-decoration: none;
 }
-.hotels a :hover {
+.hotels a:hover {
     color: #c0d9e9;
 }
 .hotels a:active {
