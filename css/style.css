@@ -268,10 +268,10 @@ body {
     margin: 0 auto;
     padding-left: 72px;
 }
-.hotel-item .name:hover {
+.hotel-item .hotel-name:hover {
     color: #81b3d2;    
 }
-.hotel-item .name:active {
+.hotel-item .hotel-name:active {
     color: #c7c7c7;
 }
 
