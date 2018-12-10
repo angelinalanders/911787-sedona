@@ -77,17 +77,19 @@
             </form>
         </section>
         <div class="catalog">
-            <p class="catalog-title">Найдено: 3</p>
-            <div class="arrows">
-                <a class="up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Up"></a>
-                <a class="down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Down"></a>
+            <div class="title">
+                <p class="catalog-title">Найдено: 3</p>
+                <h3 class="sort-title">Сортировка:</h3>
             </div>
-            <h3 class="sort-title">Сортировка:</h3>
             <ul class="sort-list">
                 <li><a class="sort-current" href="#">По цене:</a></li>
                 <li><a class="sort" href="#">По типу:</a></li>
                 <li><a class="sort" href="#">По рейтингу:</a></li>
             </ul>
+            <div class="arrows">
+                <a class="up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Up"></a>
+                <a class="down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Down"></a>
+            </div>
         </div>
         <section class="hotels">
             <div class="hotel-item">
@@ -144,9 +146,9 @@
                             <p class="hotel-price">от 3000 Р.</p>
                             <a class="button-reserve" href="#">Забронировать</a>
                         </div>
-                    </div>
-                    <div class="rating-info">
-                        <div class="rating">Рейтинг: 8,5</div>
+                        <div class="rating-info">
+                            <div class="rating">Рейтинг: 8,5</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,14 +184,22 @@
             </div>
         </section>
         <footer class="main-footer">
-            <div class="hashtag">#visitsedona</div>
+            <div class="hashtag">
+                <a href="#">#visitsedona</a>
+            </div>
             <ul class="footer-social">
                 <li><a class="social-button" href="#"><img src="img/twitter.png" width="17" height="15" alt="Твиттер"></a></li>
                 <li><a class="social-button" href="#"><img src="img/facebook.png" width="12" height="22" alt="Фейсбук"></a></li>
                 <li><a class="social-button" href="#"><img src="img/youtube.png" width="20" height="16" alt="Ютуб"></a></li>
             </ul>
             <div class="footer-copyright">
-                <p>Website by <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy"></a></p>
+                <div class="footer-web">
+                    <p>Website by <a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+                        </a>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/logo-htmlacademy.png" width="115" height="41" alt="HTML Academy">
+                </div>
             </div>
         </footer>
     </main>
