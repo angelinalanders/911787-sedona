@@ -9,7 +9,10 @@ body {
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 .main-header {
     width: 1200px;
     margin: 0 auto;
@@ -26,8 +29,6 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
     padding: 0;
     background-color: #ffffff;
 }
@@ -115,7 +116,6 @@ body {
 .column-list-service {
     display: flex;
     align-items: center;
-    vertical-align: bottom;
     padding-left: 0;
     padding-top: 60px;
     padding-bottom: 85px;
@@ -126,22 +126,19 @@ body {
 .column-list-convenience {
     display: flex;
     align-items: center;
-    vertical-align: bottom;
-    padding-left: 0;
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding: 50px 0 60px 0;
     min-height: 146px;
     margin: 0 auto;
     background-color: #eeeeee;
 }
 
 .catalog-item {
-    display: inline-block;
     vertical-align: bottom;
     text-align: center;
     font-weight: normal;
     font-size: 14px;
     line-height: 26px;
+    list-style-type: none;
     margin: 0 auto;
     width: 300px;
 }
@@ -288,7 +285,6 @@ body {
     width: 46px;
     height: 48px;
     margin: 3px;
-    font-size: 0;
     background-color: #81b3d2;
 }
 
@@ -321,7 +317,6 @@ body {
 .inner-page {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden;
     padding: 0;
     margin: 0;
 }
@@ -427,14 +422,16 @@ body {
 }
 
 .catalog {
-    padding-left: 106px;
-    margin: 0 auto;
-    height: 85px;
+    display: flex;
     border-bottom: 1px solid #e5e5e5;
     background-color: #ffffff;
 }
+.title {
+    display: inline-flex;
+}
 
 .catalog-title {
+    padding-left: 106px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -442,32 +439,39 @@ body {
     padding-bottom: 35px;
     margin: 0;
 }
+.arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding-right: 42px;
+}
 
 .sort-title {
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
-    position: relative;
-    bottom: 54px;
-    left: 163px;
-    width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-right: 35px;
+    padding-left: 50px;
+    margin: 0;
+    
 }
 
 .sort-list {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    align-items: center;
     list-style-type: none;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     font-weight: normal;
     color: #b6b6b6;
-    position: relative;
-    bottom: 75px;
-    right: 235px;
-    width: 1200px;
-    margin: 0 auto;
+    width: 647px;
+    padding: 0;
+    margin: 0;
 }
 
 .sort-list .sort:active {
@@ -494,7 +498,10 @@ body {
 .sort {
     padding-right: 30px;
 }
-
+.hotel-image {
+    margin: 0;
+    padding: 0;
+}
 .hotel-item .hotel-name:hover {
     color: #81b3d2;
 }
@@ -502,48 +509,38 @@ body {
 .hotel-item .hotel-name:active {
     color: #c7c7c7;
 }
-.hotel-image {
-    max-width: 100%;
-    height: auto;
-}
+
 .hotel-item {
     display: flex;
     text-align: left;
+    padding-left: 106px;
+    padding-right: 106px;
     background-color: #ffffff;
     min-height: 90px;
     padding-top: 30px;
-    padding-left: 106px;
-    padding-right: 106px;
     padding-bottom: 30px;
 }
 
 .hotel-information h3 {
+    display: inline-block;
     padding: 0;
-    margin-bottom: -5px;
+    margin: 0;
+}
+
+.hotel-information {
+    padding-left: 30px;
     
 }
-
-.hotel-information  {
-    margin-top: -6px;
-    padding-left: 30px;
-}
-.category-info .hotel-category {
-    margin: 5px;
-}
-.price-info .hotel-price {
-    margin: 5px;
-}
-
 .hotels a {
     color: #000000;
     text-decoration: none;
 }
 
-.hotels .button-more a:hover {
+.button-more a:hover {
     color: #c0d9e9;
 }
 
-.hotels .button-reserve a:active {
+.button-reserve a:active {
     color: #b2b2b2;
 }
 
@@ -552,9 +549,7 @@ body {
 }
 
 .more-information {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+   display: inline-flex;
 }
 
 .button-more {
@@ -610,17 +605,20 @@ body {
     background-color: #503e33;
     color: #65554b;
 }
+.category-info .hotel-category {
+    margin: 0;
+}
+.price-info .hotel-price {
+    margin: 0;
+}
 .rating-info {
+    display: flex;
     width: 522px;
-    text-align: right;
-    display: inline-block;
     justify-content: flex-end;
-    vertical-align: text-top;
+    margin-top: 20px;
 }
 
 .rating {
-    float: right;
-    margin: 0;
     background-color: #f2f2f2;
     width: 110px;
     height: 27px;
@@ -631,7 +629,6 @@ body {
 
 .star {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center; 
 }
