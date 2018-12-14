@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Седона: Каталог</title>
@@ -7,21 +8,22 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body class="inner-page">
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
-                <img src="img/logo.png" width="140" height="71" alt="Логотип Седоны">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="gallery.html">Фото и видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li class="site-navigation-current"><a>Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
     <main class="container">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="gallery.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li class="site-navigation-current"><a>Гостиницы</a></li>
+                </ul>
+                <a class="main-header-logo" href="index.html">
+                    <img src="img/logo.png" width="140" height="71" alt="Логотип Седоны">
+                </a>
+            </nav>
+        </header>
         <section class="filters">
             <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
                 <div class="structure-list">
@@ -61,14 +63,17 @@
                 <div class="price-list">
                     <h3 class="filters-title">Стоимость в сутки (Р):</h3>
                     <div class="price-select">
-                        <label><input class="price" type="text" name="price-from" value="ОТ 0"></label>
-                        <label><input class="price" type="text" name="price-to" value="ДО 3000"></label>
+                        <label>от <input class="price" type="text" name="price-from" value="0"></label>
+                        <label>до <input class="price" type="text" name="price-to" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
                         <div class="scale">
-                            <button class="scale-left" type="button"></button>
-                            <button class="scale-right" type="button"></button>
+                            <div class="line"></div>
                         </div>
+                        <div class="scale-button scale-left"></div>
+                        <div class="scale-button scale-right"></div>
                         <div class="show-button">
-                            <input type="submit" class="button" value="ПОКАЗАТЬ">
+                            <input type="submit" class="button" value="Показать">
                         </div>
                     </div>
                 </div>
@@ -100,11 +105,11 @@
                     <h3>
                         <a class="hotel-name" href="#">Amara Resort & Spa</a>
                     </h3>
-                    <div class="star">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                    <div class="rating-star">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
                     </div>
                     <div class="more-information">
                         <div class="category-info">
@@ -131,9 +136,9 @@
                     <h3>
                         <a class="hotel-name" href="#">Desert Quail Inn</a>
                     </h3>
-                    <div class="star">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                    <div class="rating-star">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
                     </div>
                     <div class="more-information">
                         <div class="category-info">
@@ -160,10 +165,10 @@
                     <h3>
                         <a class="hotel-name" href="#">Villas at Poco Diablo</a>
                     </h3>
-                    <div class="star">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
-                        <img src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                    <div class="rating-star">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
+                        <img class="star" src="img/star.svg" width="18" height="17" alt="Рейтинг">
                     </div>
                     <div class="more-information">
                         <div class="category-info">
@@ -200,4 +205,5 @@
         </footer>
     </main>
 </body>
+
 </html>
