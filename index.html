@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
@@ -9,20 +10,20 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a class="main-header-logo">
-                <img src="img/logo.png" width="140" height="71" alt="Логотип Седоны">
-            </a>
-            <ul class="site-navigation">
-                <li><a class="current" href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="inner.html">Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
     <main class="container">
+        <header class="main-header">
+            <nav class="main-navigation">
+                <ul class="site-navigation">
+                    <li><a class="current" href="#">Информация</a></li>
+                    <li><a href="#">Фото и видео</a></li>
+                    <li><a href="#">Карта штата</a></li>
+                    <li><a href="inner.html">Гостиницы</a></li>
+                </ul>
+                <a class="main-header-logo">
+                    <img src="img/logo.png" width="140" height="71" alt="Логотип Седоны">
+                </a>
+            </nav>
+        </header>
         <div class="poster">
             <img src="img/background-welcome.jpg" width="1200" height="773" alt="Welcome to the gorgeous Sedona">
             <div class="slogan">
@@ -30,7 +31,7 @@
             </div>
         </div>
         <div class="features">
-            <b>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</b>
+            <h1 class="intro-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h1>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <section class="info">
@@ -45,26 +46,26 @@
                 </div>
             </div>
             <ul class="column-list-service column-catalog-list">
-                <li class="catalog-item">
+                <li class="catalog-item-service">
                     <img src="img/icon-1.svg" width="75" height="72" alt="Жильё">
                     <h3>Жильё</h3>
                     <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li class="catalog-item">
-                    <img src="img/icon-3.svg" width="75" height="72" alt="Еда">
+                <li class="catalog-item-service">
+                    <img src="img/icon-3.svg" width="74" height="70" alt="Еда">
                     <h3>Еда</h3>
                     <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
                 </li>
-                <li class="catalog-item">
-                    <img src="img/icon-2.svg" width="75" height="72" alt="Сувениры">
+                <li class="catalog-item-service">
+                    <img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
                     <h3>Сувениры</h3>
                     <p>Не только китайского, но и местного производства!</p>
                 </li>
             </ul>
-            <div class="column column-info-item">
-                <div class="info-list">
-                    <h3>Там есть мост дьявола</h3>
-                    <p>&mdash; №2 &mdash;</p>
+            <div class="column-list column-info-item">
+                <div class="info-list-title">
+                    <h3>Там есть<br> мост дьявола</h3>
+                    <p class="number">&mdash; №2 &mdash;</p>
                     <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
                 </div>
                 <div class="column column-photo">
@@ -72,32 +73,32 @@
                 </div>
             </div>
             <ul class="column-list-convenience column-catalog-list">
-                <li class="catalog-item">
+                <li class="catalog-item-convenience">
                     <h3>Небольшая площадь</h3>
                     <p>&mdash; №3 &mdash;</p>
                     <p>Все достопримечательности находятся очень близко</p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-convenience">
                     <h3>Красивая дорога</h3>
                     <p>&mdash; №4 &mdash;</p>
                     <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item-convenience">
                     <h3>Мало туристов</h3>
                     <p>&mdash; №5 &mdash;</p>
                     <p>Большинство едет в Гранд Каньон и толпится там</p>
                 </li>
             </ul>
         </section>
-        <section class="appointment">
-            <div class="offer">
-                <h2>Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <div class="offer">
+            <h2>Заинтересовались?</h2>
+            <p>Укажите предполагаемые даты поездки, <br> и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        </div>
+        <div class="tooltip">
+            <div class="search-hotel">
+                <a href="inner.html">Поиск гостиницы в Седоне</a>
             </div>
-            <div class="tooltip">
-                <div class="search-hotel">
-                    <a href="inner.html">Поиск гостиницы в Седоне</a>
-                </div>
+            <section class="appointment">
                 <div class="map">
                     <img src="img/map.jpg" width="1200" height="593" alt="Карта">
                 </div>
@@ -140,7 +141,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+        </div>
         </section>
         <footer class="main-footer">
             <div class="hashtag">
@@ -161,4 +162,5 @@
         </footer>
     </main>
 </body>
+
 </html>
